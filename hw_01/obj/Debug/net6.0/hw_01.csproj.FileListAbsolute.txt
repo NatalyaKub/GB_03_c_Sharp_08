@@ -1,0 +1,15 @@
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\bin\Debug\net6.0\hw_01.exe
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\bin\Debug\net6.0\hw_01.deps.json
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\bin\Debug\net6.0\hw_01.runtimeconfig.json
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\bin\Debug\net6.0\hw_01.dll
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\bin\Debug\net6.0\hw_01.pdb
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\obj\Debug\net6.0\hw_01.csproj.AssemblyReference.cache
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\obj\Debug\net6.0\hw_01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\obj\Debug\net6.0\hw_01.AssemblyInfoInputs.cache
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\obj\Debug\net6.0\hw_01.AssemblyInfo.cs
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\obj\Debug\net6.0\hw_01.csproj.CoreCompileInputs.cache
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\obj\Debug\net6.0\hw_01.dll
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\obj\Debug\net6.0\refint\hw_01.dll
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\obj\Debug\net6.0\hw_01.pdb
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\obj\Debug\net6.0\hw_01.genruntimeconfig.cache
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_01\obj\Debug\net6.0\ref\hw_01.dll
