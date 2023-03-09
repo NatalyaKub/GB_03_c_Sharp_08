@@ -1,0 +1,15 @@
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\bin\Debug\net6.0\hw_02.exe
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\bin\Debug\net6.0\hw_02.deps.json
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\bin\Debug\net6.0\hw_02.runtimeconfig.json
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\bin\Debug\net6.0\hw_02.dll
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\bin\Debug\net6.0\hw_02.pdb
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\obj\Debug\net6.0\hw_02.csproj.AssemblyReference.cache
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\obj\Debug\net6.0\hw_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\obj\Debug\net6.0\hw_02.AssemblyInfoInputs.cache
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\obj\Debug\net6.0\hw_02.AssemblyInfo.cs
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\obj\Debug\net6.0\hw_02.csproj.CoreCompileInputs.cache
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\obj\Debug\net6.0\hw_02.dll
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\obj\Debug\net6.0\refint\hw_02.dll
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\obj\Debug\net6.0\hw_02.pdb
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\obj\Debug\net6.0\hw_02.genruntimeconfig.cache
+C:\Users\Ната\Desktop\GB\C_hw_08\hw_02\obj\Debug\net6.0\ref\hw_02.dll
