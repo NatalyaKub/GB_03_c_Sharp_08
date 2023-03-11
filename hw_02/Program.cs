@@ -52,7 +52,7 @@ int Min(int[] rowSum,int m){
     return rowMin;
 }
 
-Console.WriteLine("Задайте размер двухмерного массива:");
+Console.WriteLine("Задайте размер двумерного массива:");
 int m = Convert.ToInt32(Console.ReadLine());
 int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
