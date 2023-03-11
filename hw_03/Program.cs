@@ -38,11 +38,11 @@ int[,] ArrayMultiplication(int[,] arrayA, int[,]arrayB, int m, int n, int p){
     return arrayAB;
 }
 
-Console.WriteLine("Задайте размер двухмерного массива m x n:");
+Console.WriteLine("Задайте размер двумерного массива m x n:");
 int m = Convert.ToInt32(Console.ReadLine());
 int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
-Console.WriteLine($"Задайте размер двухмерного массива {n} x p:");
+Console.WriteLine($"Задайте размер двумерного массива {n} x p:");
 int p = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
 
