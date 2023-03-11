@@ -5,12 +5,41 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-int[,,] FillMatrix(int m, int n, int p){
-    int [,,] array = new int[m, n, p];
+int[,,] FillMatrix(int m){
+    int mult = m * m * m;
+    Console.Write($"размер одномерного массива: {mult}");
+    Console.WriteLine();
+    double[] arr = new double[mult];
+    int [,,] array = new int[m, m, m];
+    int e = 0;
     for (int i = 0; i < m; i++){
-        for (int j = 0; j < n; j++){
-            for (int k = 0; k < p; k++){
+        for (int j = 0; j < m; j++){
+            int kReturn = 0;
+            for (int k = 0; k < m; k++){
+
                 array[i, j, k] = new Random().Next(10,100);
+                //Console.WriteLine($"3-мерноего: {i}, {j}, {k} - {array[i, j, k]} ");
+                
+                int c = 0;
+                kReturn = 0;
+                Console.WriteLine($"while: {e}  - {i}, {j}, {k} - {array[i, j, k]}");
+                while (c < e + 1){
+                        if (array[i, j, k] == arr[c]){
+                        //Console.WriteLine($"while: {e} - {i}, {j}, {k} - {array[i, j, k]}");
+                        kReturn = 1;
+                        Console.WriteLine($"Проверка была: {i}, {j}, {k}  - {c}, {e}");
+                        break;
+                    }
+                    c++;   
+                }
+
+                if (kReturn == 1){
+                    Console.WriteLine($"k было: {k} ");
+                    k = k - 1;
+                }else{
+                    arr[e] = array[i, j, k];
+                    e++;
+                }   
             }
         }
     }
@@ -30,14 +59,12 @@ void PrintArray(int[,,] arr){
     }
 }
 
-Console.WriteLine("Задайте размер 3-мерного массива m x n x p:");
+Console.WriteLine("Задайте размер 3-мерного массива m x m x m:");
 int m = Convert.ToInt32(Console.ReadLine());
-int n = Convert.ToInt32(Console.ReadLine());
-int p = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine();
 
-int[,,] array = FillMatrix(m, n, p);
-Console.Write($"Массив размером {n} x {m} x {p}");
+Console.WriteLine();
+int[,,] array = FillMatrix(m);
+Console.Write($"Массив размером {m} x {m} x {m}");
 Console.WriteLine();
 PrintArray(array);
 Console.WriteLine();
