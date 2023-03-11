@@ -57,7 +57,7 @@ int[,] SortElementRowDescendingOder(int[,] array, int m, int n){
     return array;
 }
 
-Console.WriteLine("Задайте размер двухмерного массива:");
+Console.WriteLine("Задайте размер двумерного массива:");
 int m = Convert.ToInt32(Console.ReadLine());
 int n = Convert.ToInt32(Console.ReadLine());
 
