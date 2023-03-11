@@ -7,34 +7,31 @@
 
 int[,,] FillMatrix(int m){
     int mult = m * m * m;
-    Console.Write($"размер одномерного массива: {mult}");
-    Console.WriteLine();
+    //Console.WriteLine($"размер одномерного массива: {mult}");
     double[] arr = new double[mult];
     int [,,] array = new int[m, m, m];
     int e = 0;
+
     for (int i = 0; i < m; i++){
         for (int j = 0; j < m; j++){
             int kReturn = 0;
             for (int k = 0; k < m; k++){
-
                 array[i, j, k] = new Random().Next(10,100);
-                //Console.WriteLine($"3-мерноего: {i}, {j}, {k} - {array[i, j, k]} ");
                 
                 int c = 0;
                 kReturn = 0;
-                Console.WriteLine($"while: {e}  - {i}, {j}, {k} - {array[i, j, k]}");
+                //Console.WriteLine($"while: {e}  - {i}, {j}, {k} - {array[i, j, k]}");
                 while (c < e + 1){
                         if (array[i, j, k] == arr[c]){
-                        //Console.WriteLine($"while: {e} - {i}, {j}, {k} - {array[i, j, k]}");
                         kReturn = 1;
-                        Console.WriteLine($"Проверка была: {i}, {j}, {k}  - {c}, {e}");
+                        //Console.WriteLine($"Проверка была: {i}, {j}, {k}  - {c}, {e}");
                         break;
                     }
                     c++;   
                 }
 
                 if (kReturn == 1){
-                    Console.WriteLine($"k было: {k} ");
+                    //Console.WriteLine($"k было: {k} ");
                     k = k - 1;
                 }else{
                     arr[e] = array[i, j, k];
@@ -59,13 +56,13 @@ void PrintArray(int[,,] arr){
     }
 }
 
-Console.WriteLine("Задайте размер 3-мерного массива m x m x m:");
+Console.WriteLine("Задайте размер 3-мерного массива m x m x m (1 < m < 5):");
 int m = Convert.ToInt32(Console.ReadLine());
-
 Console.WriteLine();
+
 int[,,] array = FillMatrix(m);
 Console.Write($"Массив размером {m} x {m} x {m}");
 Console.WriteLine();
+
 PrintArray(array);
-Console.WriteLine();
 
