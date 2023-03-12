@@ -5,13 +5,44 @@
 // 11 16 15 06
 // 10 09 08 07
 
-int[,] FillMatrix(int m, int n){
-    int [,] array = new int[m, n];
-    int k = 1;
-    for (int i = 0; i < n; i++){
-        for (int j = 0; j < m; j++){
-            array[i, j] = k++;
-        }
+int[,] FillMatrix(int m){
+    int [,] array = new int[m, m];
+    int numb = 0;
+
+    // Первая строка (слева направа)
+    for(int j = 0; j < m; j++){
+        //int i = 0;
+        numb = numb + 1;
+        array[0, j] = numb;;
+    }
+    // Последний столбец (кроме первой и последней строки) (сверху вниз)
+    for(int i = 1; i < m-1; i++){
+        numb = numb + 1;
+        array[i, m-1] = numb;;
+    }
+
+    // Последняя строка (справа налево)
+    for(int j = m-1; j >= 0; j--){
+        numb = numb + 1;
+        array[m-1, j] = numb;;
+    }
+
+    // Первый столбец (кроме первой и последней строки) (снизу вверх)
+    for(int i = m-2; i > 0; i--){
+        numb = numb + 1;
+        array[i, 0] = numb;
+    }
+
+    // Вторая строка (кроме первой и последней строки)(слева направа)
+    for (int j = 1; j < m-1; j++){
+            numb = numb + 1;
+            array[1, j] = numb;;
+    }
+
+    // Третья строка (кроме первой и последней строки) (справа налево)
+    for (int j = m-2; j >= 1; j--){
+            numb = numb + 1;
+            array[2, j] = numb;;
     }
     return array;
 }
@@ -20,18 +51,22 @@ void PrintArray(int[,] arr){
     // Method code.
     for (int i = 0; i < arr.GetLength(0); i++){
         for (int j = 0; j < arr.GetLength(1); j++){
-            Console.Write($"{arr[i,j]} ");
+            if(arr[i,j] >= 0 && arr[i,j] <= 9){
+                Console.Write($"0{arr[i,j]} ");
+            }else{
+                Console.Write($"{arr[i,j]} ");
+            }
         }
         Console.WriteLine();
     }
 }
-Console.WriteLine("Задайте размер двумерного массива:");
-int m = Convert.ToInt32(Console.ReadLine());
-int n = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Задайте размер двумерного массива m x m:");
+// int m = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Размер двумерного массива m x m: 4 x 4");
+int m = 4;
 Console.WriteLine();
 
-int[,] array = FillMatrix(m, n);
+int[,] array = FillMatrix(m);
 PrintArray(array);
 Console.WriteLine();
-
-
