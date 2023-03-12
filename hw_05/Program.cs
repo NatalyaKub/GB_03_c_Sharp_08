@@ -5,44 +5,46 @@
 // 11 16 15 06
 // 10 09 08 07
 
+
+// Не усмела додумать что-нибудь 
+
 int[,] FillMatrix(int m){
     int [,] array = new int[m, m];
     int numb = 0;
 
     // Первая строка (слева направа)
-    for(int j = 0; j < m; j++){
-        //int i = 0;
+    for(int i = 0, j = 0; j < m; j++){
         numb = numb + 1;
-        array[0, j] = numb;;
+        array[i, j] = numb;;
     }
     // Последний столбец (кроме первой и последней строки) (сверху вниз)
-    for(int i = 1; i < m-1; i++){
+    for(int i = 1, j = m-1; i < m-1; i++){
         numb = numb + 1;
-        array[i, m-1] = numb;;
+        array[i, j] = numb;;
     }
 
     // Последняя строка (справа налево)
-    for(int j = m-1; j >= 0; j--){
+    for(int i = m-1, j = m-1; j >= 0; j--){
         numb = numb + 1;
-        array[m-1, j] = numb;;
+        array[i, j] = numb;;
     }
 
     // Первый столбец (кроме первой и последней строки) (снизу вверх)
-    for(int i = m-2; i > 0; i--){
+    for(int i = m-2, j = 0; i > 0; i--){
         numb = numb + 1;
-        array[i, 0] = numb;
+        array[i, j] = numb;
     }
 
     // Вторая строка (кроме первой и последней строки)(слева направа)
-    for (int j = 1; j < m-1; j++){
+    for (int i = 1, j = 1; j < m-1; j++){
             numb = numb + 1;
-            array[1, j] = numb;;
+            array[i, j] = numb;;
     }
 
     // Третья строка (кроме первой и последней строки) (справа налево)
-    for (int j = m-2; j >= 1; j--){
+    for (int i = 2, j = m-2; j >= 1; j--){
             numb = numb + 1;
-            array[2, j] = numb;;
+            array[i, j] = numb;;
     }
     return array;
 }
